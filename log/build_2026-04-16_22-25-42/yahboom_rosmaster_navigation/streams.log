@@ -1,0 +1,39 @@
+[0.018s] Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation
+[0.060s] -- The C compiler identification is GNU 13.3.0
+[0.115s] -- The CXX compiler identification is GNU 13.3.0
+[0.128s] -- Detecting C compiler ABI info
+[0.201s] -- Detecting C compiler ABI info - done
+[0.216s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.216s] -- Detecting C compile features
+[0.217s] -- Detecting C compile features - done
+[0.225s] -- Detecting CXX compiler ABI info
+[0.308s] -- Detecting CXX compiler ABI info - done
+[0.318s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.318s] -- Detecting CXX compile features
+[0.318s] -- Detecting CXX compile features - done
+[0.322s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.469s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.543s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.591s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.659s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.682s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.709s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.739s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.828s] -- Configuring incomplete, errors occurred!
+[0.829s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[0.829s]   By not providing "Findnavigation2.cmake" in CMAKE_MODULE_PATH this project
+[0.829s]   has asked CMake to find a package configuration file provided by
+[0.829s]   "navigation2", but CMake did not find one.
+[0.829s] 
+[0.829s]   Could not find a package configuration file provided by "navigation2" with
+[0.829s]   any of the following names:
+[0.829s] 
+[0.829s]     navigation2Config.cmake
+[0.830s]     navigation2-config.cmake
+[0.830s] 
+[0.830s]   Add the installation prefix of "navigation2" to CMAKE_PREFIX_PATH or set
+[0.830s]   "navigation2_DIR" to a directory containing one of the above files.  If
+[0.830s]   "navigation2" provides a separate development package or SDK, be sure it
+[0.830s]   has been installed.
+[0.830s] 
+[0.830s] [0m

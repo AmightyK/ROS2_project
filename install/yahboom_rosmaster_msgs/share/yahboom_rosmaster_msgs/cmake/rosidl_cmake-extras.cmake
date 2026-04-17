@@ -1,0 +1,1 @@
+/home/kostas/ros2_ws/build/yahboom_rosmaster_msgs/rosidl_cmake/rosidl_cmake-extras.cmake

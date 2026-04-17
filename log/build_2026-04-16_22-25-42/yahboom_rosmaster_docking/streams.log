@@ -1,0 +1,46 @@
+[0.018s] Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_docking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_docking -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kostas/ros2_ws/install/yahboom_rosmaster_docking
+[0.065s] -- The C compiler identification is GNU 13.3.0
+[0.121s] -- The CXX compiler identification is GNU 13.3.0
+[0.136s] -- Detecting C compiler ABI info
+[0.223s] -- Detecting C compiler ABI info - done
+[0.237s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.237s] -- Detecting C compile features
+[0.238s] -- Detecting C compile features - done
+[0.246s] -- Detecting CXX compiler ABI info
+[0.339s] -- Detecting CXX compiler ABI info - done
+[0.348s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.349s] -- Detecting CXX compile features
+[0.349s] -- Detecting CXX compile features - done
+[0.351s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.505s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.573s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.607s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.651s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.665s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.680s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.698s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.740s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.800s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.803s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.875s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.898s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.922s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.991s] -- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.998s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.998s]   By not providing "Findapriltag_ros.cmake" in CMAKE_MODULE_PATH this project
+[0.999s]   has asked CMake to find a package configuration file provided by
+[0.999s]   "apriltag_ros", but CMake did not find one.
+[0.999s] 
+[0.999s]   Could not find a package configuration file provided by "apriltag_ros" with
+[0.999s]   any of the following names:
+[0.999s] 
+[0.999s]     apriltag_rosConfig.cmake
+[0.999s]     apriltag_ros-config.cmake
+[0.999s] 
+[1.000s]   Add the installation prefix of "apriltag_ros" to CMAKE_PREFIX_PATH or set
+[1.000s]   "apriltag_ros_DIR" to a directory containing one of the above files.  If
+[1.000s]   "apriltag_ros" provides a separate development package or SDK, be sure it
+[1.000s]   has been installed.
+[1.000s] 
+[1.000s] [0m
+[1.000s] -- Configuring incomplete, errors occurred!

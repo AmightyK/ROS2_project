@@ -1,0 +1,35 @@
+[0.018s] Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_localization -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kostas/ros2_ws/install/yahboom_rosmaster_localization
+[0.084s] -- The C compiler identification is GNU 13.3.0
+[0.135s] -- The CXX compiler identification is GNU 13.3.0
+[0.150s] -- Detecting C compiler ABI info
+[0.229s] -- Detecting C compiler ABI info - done
+[0.239s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.239s] -- Detecting C compile features
+[0.239s] -- Detecting C compile features - done
+[0.247s] -- Detecting CXX compiler ABI info
+[0.344s] -- Detecting CXX compiler ABI info - done
+[0.358s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.358s] -- Detecting CXX compile features
+[0.359s] -- Detecting CXX compile features - done
+[0.364s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.509s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.615s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.657s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.658s]   By not providing "Findrobot_localization.cmake" in CMAKE_MODULE_PATH this
+[0.658s]   project has asked CMake to find a package configuration file provided by
+[0.658s]   "robot_localization", but CMake did not find one.
+[0.658s] 
+[0.658s]   Could not find a package configuration file provided by
+[0.658s]   "robot_localization" with any of the following names:
+[0.658s] 
+[0.658s]     robot_localizationConfig.cmake
+[0.658s]     robot_localization-config.cmake
+[0.658s] 
+[0.658s]   Add the installation prefix of "robot_localization" to CMAKE_PREFIX_PATH or
+[0.658s]   set "robot_localization_DIR" to a directory containing one of the above
+[0.658s]   files.  If "robot_localization" provides a separate development package or
+[0.658s]   SDK, be sure it has been installed.
+[0.658s] 
+[0.658s] [0m
+[0.659s] -- Configuring incomplete, errors occurred!
+[0.662s] Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_localization -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kostas/ros2_ws/install/yahboom_rosmaster_localization

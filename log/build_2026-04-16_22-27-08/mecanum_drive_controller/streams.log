@@ -1,0 +1,15 @@
+[0.044s] Invoking command in '/home/kostas/ros2_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/mecanum_drive_controller -- -j12 -l12
+[0.103s] [ 16%] [34m[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/kostas/ros2_ws/build/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp /home/kostas/ros2_ws/src/yahboom_rosmaster/mecanum_drive_controller/src/mecanum_drive_controller_parameter.yaml `[0m
+[1.429s] [ 33%] [34m[1mCreating deprecated header file /home/kostas/ros2_ws/build/mecanum_drive_controller/include/mecanum_drive_controller_parameters.hpp[0m
+[1.448s] [ 33%] Built target mecanum_drive_controller_parameters
+[1.467s] [ 50%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/odometry.cpp.o[0m
+[1.467s] [ 66%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/speed_limiter.cpp.o[0m
+[1.471s] [ 83%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m
+[3.849s] In file included from [01m[K/home/kostas/ros2_ws/src/yahboom_rosmaster/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller.hpp:37[m[K,
+[3.849s]                  from [01m[K/home/kostas/ros2_ws/src/yahboom_rosmaster/mecanum_drive_controller/src/mecanum_drive_controller.cpp:42[m[K:
+[3.849s] [01m[K/opt/ros/jazzy/include/realtime_tools/realtime_tools/realtime_box.hpp:40:151:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: 'RealtimeBox' is deprecated. Please update your code to use 'realtime_thread_safe_box.hpp' header, and class name 'RealtimeThreadSafeBox' instead.[m[K’
+[3.849s]    40 | pp' header, and class name 'RealtimeThreadSafeBox' instead."[01;36m[K)[m[K  //NOLINT
+[3.849s]       |                                                             [01;36m[K^[m[K
+[3.849s] 
+[10.259s] [100%] [32m[1mLinking CXX shared library libmecanum_drive_controller.so[0m
+[10.698s] [100%] Built target mecanum_drive_controller

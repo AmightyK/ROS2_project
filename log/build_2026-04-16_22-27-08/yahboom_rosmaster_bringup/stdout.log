@@ -1,0 +1,21 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/launch/load_ros2_controllers.launch.py
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/launch/rosmaster_x3_navigation.launch.py
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/scripts/rosmaster_x3_gazebo.sh
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/scripts/rosmaster_x3_navigation.sh
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/ament_index/resource_index/package_run_dependencies/yahboom_rosmaster_bringup
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/ament_index/resource_index/parent_prefix_path/yahboom_rosmaster_bringup
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/environment/ament_prefix_path.sh
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/environment/ament_prefix_path.dsv
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/environment/path.sh
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/environment/path.dsv
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/local_setup.bash
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/local_setup.sh
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/local_setup.zsh
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/local_setup.dsv
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/package.dsv
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/ament_index/resource_index/packages/yahboom_rosmaster_bringup
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/cmake/yahboom_rosmaster_bringupConfig.cmake
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/cmake/yahboom_rosmaster_bringupConfig-version.cmake
+-- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/package.xml

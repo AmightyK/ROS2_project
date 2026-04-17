@@ -1,0 +1,14 @@
+[ 16%] [34m[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/kostas/ros2_ws/build/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp /home/kostas/ros2_ws/src/yahboom_rosmaster/mecanum_drive_controller/src/mecanum_drive_controller_parameter.yaml `[0m
+[ 33%] [34m[1mCreating deprecated header file /home/kostas/ros2_ws/build/mecanum_drive_controller/include/mecanum_drive_controller_parameters.hpp[0m
+[ 33%] Built target mecanum_drive_controller_parameters
+[ 50%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/odometry.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/speed_limiter.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m
+In file included from [01m[K/home/kostas/ros2_ws/src/yahboom_rosmaster/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller.hpp:37[m[K,
+                 from [01m[K/home/kostas/ros2_ws/src/yahboom_rosmaster/mecanum_drive_controller/src/mecanum_drive_controller.cpp:42[m[K:
+[01m[K/opt/ros/jazzy/include/realtime_tools/realtime_tools/realtime_box.hpp:40:151:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: 'RealtimeBox' is deprecated. Please update your code to use 'realtime_thread_safe_box.hpp' header, and class name 'RealtimeThreadSafeBox' instead.[m[K’
+   40 | pp' header, and class name 'RealtimeThreadSafeBox' instead."[01;36m[K)[m[K  //NOLINT
+      |                                                             [01;36m[K^[m[K
+
+[100%] [32m[1mLinking CXX shared library libmecanum_drive_controller.so[0m
+[100%] Built target mecanum_drive_controller

@@ -1,0 +1,22 @@
+[0.019s] Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_localization -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kostas/ros2_ws/install/yahboom_rosmaster_localization
+[0.029s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.267s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.290s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.290s]   By not providing "Findrobot_localization.cmake" in CMAKE_MODULE_PATH this
+[0.291s]   project has asked CMake to find a package configuration file provided by
+[0.291s]   "robot_localization", but CMake did not find one.
+[0.291s] 
+[0.291s]   Could not find a package configuration file provided by
+[0.291s]   "robot_localization" with any of the following names:
+[0.291s] 
+[0.291s]     robot_localizationConfig.cmake
+[0.291s]     robot_localization-config.cmake
+[0.291s] 
+[0.291s]   Add the installation prefix of "robot_localization" to CMAKE_PREFIX_PATH or
+[0.292s]   set "robot_localization_DIR" to a directory containing one of the above
+[0.292s]   files.  If "robot_localization" provides a separate development package or
+[0.292s]   SDK, be sure it has been installed.
+[0.292s] 
+[0.292s] [0m
+[0.292s] -- Configuring incomplete, errors occurred!
+[0.294s] Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_localization -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kostas/ros2_ws/install/yahboom_rosmaster_localization

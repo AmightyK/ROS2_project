@@ -1,0 +1,1 @@
+/home/kostas/ros2_ws/build/yahboom_rosmaster_msgs/ament_cmake_core/yahboom_rosmaster_msgsConfig-version.cmake

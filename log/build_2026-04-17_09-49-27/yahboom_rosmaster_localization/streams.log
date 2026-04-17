@@ -1,0 +1,23 @@
+[0.032s] Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_localization -- -j12 -l12
+[0.154s] Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_localization -- -j12 -l12
+[0.164s] Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_localization
+[0.175s] -- Install configuration: ""
+[0.177s] -- Execute custom install script
+[0.180s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/config/ekf.yaml
+[0.180s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/launch/ekf_gazebo.launch.py
+[0.181s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/ament_index/resource_index/package_run_dependencies/yahboom_rosmaster_localization
+[0.181s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/ament_index/resource_index/parent_prefix_path/yahboom_rosmaster_localization
+[0.182s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/environment/ament_prefix_path.sh
+[0.182s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/environment/ament_prefix_path.dsv
+[0.182s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/environment/path.sh
+[0.182s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/environment/path.dsv
+[0.182s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/local_setup.bash
+[0.182s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/local_setup.sh
+[0.182s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/local_setup.zsh
+[0.189s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/local_setup.dsv
+[0.189s] -- Symlinking: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/package.dsv
+[0.189s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/ament_index/resource_index/packages/yahboom_rosmaster_localization
+[0.190s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/cmake/yahboom_rosmaster_localizationConfig.cmake
+[0.191s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/cmake/yahboom_rosmaster_localizationConfig-version.cmake
+[0.192s] -- Up-to-date symlink: /home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/package.xml
+[0.193s] Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_localization

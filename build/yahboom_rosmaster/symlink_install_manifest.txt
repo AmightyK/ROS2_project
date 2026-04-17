@@ -1,0 +1,15 @@
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/ament_index/resource_index/package_run_dependencies/yahboom_rosmaster
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/ament_index/resource_index/parent_prefix_path/yahboom_rosmaster
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/environment/ament_prefix_path.sh
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/environment/ament_prefix_path.dsv
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/environment/path.sh
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/environment/path.dsv
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/local_setup.bash
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/local_setup.sh
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/local_setup.zsh
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/local_setup.dsv
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.dsv
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/ament_index/resource_index/packages/yahboom_rosmaster
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/cmake/yahboom_rosmasterConfig.cmake
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/cmake/yahboom_rosmasterConfig-version.cmake
+/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.xml

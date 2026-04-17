@@ -1,0 +1,761 @@
+[0.078s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.078s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79bf1c594500>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79bf1c512240>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79bf1c512240>>, mixin_verb=('build',))
+[0.106s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.106s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.106s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.106s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.106s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.106s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.106s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kostas/ros2_ws'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extensions ['ros']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'ros'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extensions ['cmake', 'python']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'cmake'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'python'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extensions ['python_setup_py']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster) by extension 'python_setup_py'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/mecanum_drive_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/mecanum_drive_controller) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/mecanum_drive_controller) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/mecanum_drive_controller) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/mecanum_drive_controller) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/mecanum_drive_controller) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/mecanum_drive_controller) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/mecanum_drive_controller) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/mecanum_drive_controller) by extension 'ros'
+[0.129s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yahboom_rosmaster/mecanum_drive_controller' with type 'ros.ament_cmake' and name 'mecanum_drive_controller'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extensions ['ignore', 'ignore_ament_install']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extension 'ignore'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extension 'ignore_ament_install'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extensions ['colcon_pkg']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extension 'colcon_pkg'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extensions ['colcon_meta']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extension 'colcon_meta'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extensions ['ros']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster) by extension 'ros'
+[0.130s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yahboom_rosmaster/yahboom_rosmaster' with type 'ros.ament_cmake' and name 'yahboom_rosmaster'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_bringup) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_bringup) by extension 'ignore_ament_install'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_bringup) by extensions ['colcon_pkg']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_bringup) by extension 'colcon_pkg'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_bringup) by extensions ['colcon_meta']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_bringup) by extension 'colcon_meta'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_bringup) by extensions ['ros']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_bringup) by extension 'ros'
+[0.130s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yahboom_rosmaster/yahboom_rosmaster_bringup' with type 'ros.ament_cmake' and name 'yahboom_rosmaster_bringup'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extension 'ignore_ament_install'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extensions ['colcon_pkg']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extension 'colcon_pkg'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extensions ['colcon_meta']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extension 'colcon_meta'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extensions ['ros']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_description) by extension 'ros'
+[0.131s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yahboom_rosmaster/yahboom_rosmaster_description' with type 'ros.ament_cmake' and name 'yahboom_rosmaster_description'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_docking) by extensions ['ignore', 'ignore_ament_install']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_docking) by extension 'ignore'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_docking) by extension 'ignore_ament_install'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_docking) by extensions ['colcon_pkg']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_docking) by extension 'colcon_pkg'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_docking) by extensions ['colcon_meta']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_docking) by extension 'colcon_meta'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_docking) by extensions ['ros']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_docking) by extension 'ros'
+[0.132s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yahboom_rosmaster/yahboom_rosmaster_docking' with type 'ros.ament_cmake' and name 'yahboom_rosmaster_docking'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_gazebo) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_gazebo) by extension 'ignore_ament_install'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_gazebo) by extensions ['colcon_pkg']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_gazebo) by extension 'colcon_pkg'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_gazebo) by extensions ['colcon_meta']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_gazebo) by extension 'colcon_meta'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_gazebo) by extensions ['ros']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_gazebo) by extension 'ros'
+[0.133s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yahboom_rosmaster/yahboom_rosmaster_gazebo' with type 'ros.ament_cmake' and name 'yahboom_rosmaster_gazebo'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_localization) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_localization) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_localization) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_localization) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_localization) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_localization) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_localization) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_localization) by extension 'ros'
+[0.133s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yahboom_rosmaster/yahboom_rosmaster_localization' with type 'ros.ament_cmake' and name 'yahboom_rosmaster_localization'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_msgs) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_msgs) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_msgs) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_msgs) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_msgs) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_msgs) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_msgs) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_msgs) by extension 'ros'
+[0.134s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yahboom_rosmaster/yahboom_rosmaster_msgs' with type 'ros.ament_cmake' and name 'yahboom_rosmaster_msgs'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_navigation) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_navigation) by extension 'ignore_ament_install'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_navigation) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_navigation) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_navigation) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_navigation) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_navigation) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_navigation) by extension 'ros'
+[0.135s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yahboom_rosmaster/yahboom_rosmaster_navigation' with type 'ros.ament_cmake' and name 'yahboom_rosmaster_navigation'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_system_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_system_tests) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_system_tests) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_system_tests) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_system_tests) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_system_tests) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_system_tests) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_system_tests) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/yahboom_rosmaster/yahboom_rosmaster_system_tests) by extension 'ros'
+[0.136s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yahboom_rosmaster/yahboom_rosmaster_system_tests' with type 'ros.ament_cmake' and name 'yahboom_rosmaster_system_tests'
+[0.136s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.136s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.136s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.136s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.136s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.153s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 439 installed packages in /opt/ros/jazzy
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.187s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'mecanum_drive_controller' is in: /opt/ros/jazzy
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding mecanum_drive_controller
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_target' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.188s] DEBUG:colcon.colcon_core.verb:Building package 'mecanum_drive_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kostas/ros2_ws/build/mecanum_drive_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kostas/ros2_ws/install/mecanum_drive_controller', 'merge_install': False, 'path': '/home/kostas/ros2_ws/src/yahboom_rosmaster/mecanum_drive_controller', 'symlink_install': True, 'test_result_base': None}
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_bringup' build argument 'cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_bringup' build argument 'cmake_target' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.188s] DEBUG:colcon.colcon_core.verb:Building package 'yahboom_rosmaster_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kostas/ros2_ws/build/yahboom_rosmaster_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup', 'merge_install': False, 'path': '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'cmake_target' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.189s] DEBUG:colcon.colcon_core.verb:Building package 'yahboom_rosmaster_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kostas/ros2_ws/build/yahboom_rosmaster_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kostas/ros2_ws/install/yahboom_rosmaster_description', 'merge_install': False, 'path': '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_description', 'symlink_install': True, 'test_result_base': None}
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_docking' build argument 'cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_docking' build argument 'cmake_target' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_docking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_docking' build argument 'cmake_clean_cache' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_docking' build argument 'cmake_clean_first' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_docking' build argument 'cmake_force_configure' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_docking' build argument 'ament_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_docking' build argument 'catkin_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_docking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.189s] DEBUG:colcon.colcon_core.verb:Building package 'yahboom_rosmaster_docking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kostas/ros2_ws/build/yahboom_rosmaster_docking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking', 'merge_install': False, 'path': '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_docking', 'symlink_install': True, 'test_result_base': None}
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.189s] DEBUG:colcon.colcon_core.verb:Building package 'yahboom_rosmaster_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kostas/ros2_ws/build/yahboom_rosmaster_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo', 'merge_install': False, 'path': '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_gazebo', 'symlink_install': True, 'test_result_base': None}
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_localization' build argument 'cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_localization' build argument 'cmake_target' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.189s] DEBUG:colcon.colcon_core.verb:Building package 'yahboom_rosmaster_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization', 'merge_install': False, 'path': '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_localization', 'symlink_install': True, 'test_result_base': None}
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_msgs' build argument 'cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_msgs' build argument 'cmake_target' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.190s] DEBUG:colcon.colcon_core.verb:Building package 'yahboom_rosmaster_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kostas/ros2_ws/build/yahboom_rosmaster_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs', 'merge_install': False, 'path': '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_navigation' build argument 'cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_navigation' build argument 'cmake_target' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.190s] DEBUG:colcon.colcon_core.verb:Building package 'yahboom_rosmaster_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kostas/ros2_ws/build/yahboom_rosmaster_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation', 'merge_install': False, 'path': '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_navigation', 'symlink_install': True, 'test_result_base': None}
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_system_tests' build argument 'cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_system_tests' build argument 'cmake_target' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_system_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_system_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_system_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_system_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_system_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_system_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster_system_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.190s] DEBUG:colcon.colcon_core.verb:Building package 'yahboom_rosmaster_system_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kostas/ros2_ws/build/yahboom_rosmaster_system_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests', 'merge_install': False, 'path': '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_system_tests', 'symlink_install': True, 'test_result_base': None}
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'cmake_target' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'cmake_clean_cache' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'cmake_clean_first' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'cmake_force_configure' from command line to 'False'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'ament_cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'catkin_cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'yahboom_rosmaster' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.190s] DEBUG:colcon.colcon_core.verb:Building package 'yahboom_rosmaster' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kostas/ros2_ws/build/yahboom_rosmaster', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kostas/ros2_ws/install/yahboom_rosmaster', 'merge_install': False, 'path': '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster', 'symlink_install': True, 'test_result_base': None}
+[0.190s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.191s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.191s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_msgs' with build type 'ament_cmake'
+[0.191s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_msgs'
+[0.194s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.194s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.194s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.197s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_bringup' with build type 'ament_cmake'
+[0.197s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_bringup'
+[0.197s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.197s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.200s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_description' with build type 'ament_cmake'
+[0.200s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_description'
+[0.200s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.200s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.204s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_docking' with build type 'ament_cmake'
+[0.204s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_docking'
+[0.204s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.204s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.207s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_gazebo' with build type 'ament_cmake'
+[0.207s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_gazebo'
+[0.207s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.207s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.210s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_localization' with build type 'ament_cmake'
+[0.210s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_localization'
+[0.210s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.210s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.212s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_navigation' with build type 'ament_cmake'
+[0.212s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_navigation'
+[0.212s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.212s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.215s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/mecanum_drive_controller' with build type 'ament_cmake'
+[0.215s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/mecanum_drive_controller'
+[0.215s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.215s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.221s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_msgs -- -j12 -l12
+[0.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_bringup -- -j12 -l12
+[0.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_description -- -j12 -l12
+[0.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_docking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_docking -- -j12 -l12
+[0.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_gazebo -- -j12 -l12
+[0.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_localization -- -j12 -l12
+[0.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_navigation -- -j12 -l12
+[0.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/mecanum_drive_controller -- -j12 -l12
+[0.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_description -- -j12 -l12
+[0.270s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_description
+[0.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_gazebo -- -j12 -l12
+[0.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_gazebo
+[0.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_bringup -- -j12 -l12
+[0.275s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_bringup
+[0.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_localization -- -j12 -l12
+[0.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_localization
+[0.295s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_description)
+[0.297s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_description' for CMake module files
+[0.298s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_description' for CMake config files
+[0.299s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_description
+[0.302s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_description', 'cmake_prefix_path')
+[0.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/hook/cmake_prefix_path.ps1'
+[0.304s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/hook/cmake_prefix_path.dsv'
+[0.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/hook/cmake_prefix_path.sh'
+[0.314s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/bin'
+[0.314s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/lib/pkgconfig/yahboom_rosmaster_description.pc'
+[0.315s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/lib/python3.12/site-packages'
+[0.315s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/bin'
+[0.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.ps1'
+[0.319s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.dsv'
+[0.319s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.sh'
+[0.320s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.bash'
+[0.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.zsh'
+[0.324s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/colcon-core/packages/yahboom_rosmaster_description)
+[0.325s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_description)
+[0.325s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_description' for CMake module files
+[0.325s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_description' for CMake config files
+[0.326s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_description', 'cmake_prefix_path')
+[0.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/hook/cmake_prefix_path.ps1'
+[0.326s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/hook/cmake_prefix_path.dsv'
+[0.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/hook/cmake_prefix_path.sh'
+[0.330s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/bin'
+[0.331s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/lib/pkgconfig/yahboom_rosmaster_description.pc'
+[0.331s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/lib/python3.12/site-packages'
+[0.332s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/bin'
+[0.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.ps1'
+[0.335s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.dsv'
+[0.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.sh'
+[0.340s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.bash'
+[0.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/yahboom_rosmaster_description/package.zsh'
+[0.345s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_description/share/colcon-core/packages/yahboom_rosmaster_description)
+[0.356s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_localization)
+[0.357s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization' for CMake module files
+[0.359s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization' for CMake config files
+[0.359s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_localization', 'cmake_prefix_path')
+[0.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/hook/cmake_prefix_path.ps1'
+[0.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/hook/cmake_prefix_path.dsv'
+[0.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/hook/cmake_prefix_path.sh'
+[0.361s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/bin'
+[0.362s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/lib/pkgconfig/yahboom_rosmaster_localization.pc'
+[0.362s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/lib/python3.12/site-packages'
+[0.362s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/bin'
+[0.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/package.ps1'
+[0.365s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/package.dsv'
+[0.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/package.sh'
+[0.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/package.bash'
+[0.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/package.zsh'
+[0.372s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/colcon-core/packages/yahboom_rosmaster_localization)
+[0.374s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_localization)
+[0.375s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization' for CMake module files
+[0.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_localization
+[0.380s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization' for CMake config files
+[0.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_localization', 'cmake_prefix_path')
+[0.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/hook/cmake_prefix_path.ps1'
+[0.409s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/hook/cmake_prefix_path.dsv'
+[0.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/hook/cmake_prefix_path.sh'
+[0.411s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/bin'
+[0.412s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/lib/pkgconfig/yahboom_rosmaster_localization.pc'
+[0.412s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/lib/python3.12/site-packages'
+[0.413s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/bin'
+[0.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/package.ps1'
+[0.415s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/package.dsv'
+[0.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/package.sh'
+[0.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/package.bash'
+[0.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/yahboom_rosmaster_localization/package.zsh'
+[0.422s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_localization/share/colcon-core/packages/yahboom_rosmaster_localization)
+[0.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_docking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_docking -- -j12 -l12
+[0.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_docking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_docking
+[0.425s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_bringup)
+[0.425s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup' for CMake module files
+[0.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_bringup
+[0.426s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup' for CMake config files
+[0.426s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_bringup', 'cmake_prefix_path')
+[0.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/hook/cmake_prefix_path.ps1'
+[0.427s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/hook/cmake_prefix_path.dsv'
+[0.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/hook/cmake_prefix_path.sh'
+[0.428s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/bin'
+[0.428s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/lib/pkgconfig/yahboom_rosmaster_bringup.pc'
+[0.428s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/lib/python3.12/site-packages'
+[0.428s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/bin'
+[0.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/package.ps1'
+[0.429s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/package.dsv'
+[0.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/package.sh'
+[0.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/package.bash'
+[0.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/package.zsh'
+[0.431s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/colcon-core/packages/yahboom_rosmaster_bringup)
+[0.431s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_bringup)
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup' for CMake module files
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup' for CMake config files
+[0.432s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_bringup', 'cmake_prefix_path')
+[0.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/hook/cmake_prefix_path.ps1'
+[0.432s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/hook/cmake_prefix_path.dsv'
+[0.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/hook/cmake_prefix_path.sh'
+[0.432s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/bin'
+[0.432s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/lib/pkgconfig/yahboom_rosmaster_bringup.pc'
+[0.433s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/lib/python3.12/site-packages'
+[0.433s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/bin'
+[0.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/package.ps1'
+[0.433s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/package.dsv'
+[0.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/package.sh'
+[0.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/package.bash'
+[0.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/yahboom_rosmaster_bringup/package.zsh'
+[0.434s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup/share/colcon-core/packages/yahboom_rosmaster_bringup)
+[0.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/mecanum_drive_controller -- -j12 -l12
+[0.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/mecanum_drive_controller
+[0.437s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_gazebo)
+[0.437s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo' for CMake module files
+[0.439s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_gazebo
+[0.439s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo' for CMake config files
+[0.439s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_gazebo', 'cmake_prefix_path')
+[0.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/hook/cmake_prefix_path.ps1'
+[0.439s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/hook/cmake_prefix_path.dsv'
+[0.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/hook/cmake_prefix_path.sh'
+[0.440s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/bin'
+[0.440s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/lib/pkgconfig/yahboom_rosmaster_gazebo.pc'
+[0.440s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/lib/python3.12/site-packages'
+[0.441s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/bin'
+[0.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/package.ps1'
+[0.441s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/package.dsv'
+[0.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/package.sh'
+[0.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/package.bash'
+[0.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/package.zsh'
+[0.443s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/colcon-core/packages/yahboom_rosmaster_gazebo)
+[0.445s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_gazebo)
+[0.445s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo' for CMake module files
+[0.445s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo' for CMake config files
+[0.446s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_gazebo', 'cmake_prefix_path')
+[0.446s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/hook/cmake_prefix_path.ps1'
+[0.446s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/hook/cmake_prefix_path.dsv'
+[0.446s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/hook/cmake_prefix_path.sh'
+[0.447s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/bin'
+[0.447s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/lib/pkgconfig/yahboom_rosmaster_gazebo.pc'
+[0.447s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/lib/python3.12/site-packages'
+[0.447s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/bin'
+[0.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/package.ps1'
+[0.448s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/package.dsv'
+[0.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/package.sh'
+[0.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/package.bash'
+[0.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/yahboom_rosmaster_gazebo/package.zsh'
+[0.449s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo/share/colcon-core/packages/yahboom_rosmaster_gazebo)
+[0.450s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_docking)
+[0.450s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking' for CMake module files
+[0.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_docking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_docking
+[0.451s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking' for CMake config files
+[0.454s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_docking', 'cmake_prefix_path')
+[0.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/hook/cmake_prefix_path.ps1'
+[0.455s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/hook/cmake_prefix_path.dsv'
+[0.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/hook/cmake_prefix_path.sh'
+[0.456s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/lib'
+[0.456s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/bin'
+[0.456s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/lib/pkgconfig/yahboom_rosmaster_docking.pc'
+[0.456s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/lib/python3.12/site-packages'
+[0.457s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/bin'
+[0.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/package.ps1'
+[0.457s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/package.dsv'
+[0.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/package.sh'
+[0.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/package.bash'
+[0.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/package.zsh'
+[0.458s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/colcon-core/packages/yahboom_rosmaster_docking)
+[0.459s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_docking)
+[0.459s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking' for CMake module files
+[0.459s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking' for CMake config files
+[0.459s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_docking', 'cmake_prefix_path')
+[0.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/hook/cmake_prefix_path.ps1'
+[0.460s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/hook/cmake_prefix_path.dsv'
+[0.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/hook/cmake_prefix_path.sh'
+[0.460s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/lib'
+[0.460s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/bin'
+[0.460s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/lib/pkgconfig/yahboom_rosmaster_docking.pc'
+[0.461s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/lib/python3.12/site-packages'
+[0.461s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/bin'
+[0.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/package.ps1'
+[0.461s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/package.dsv'
+[0.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/package.sh'
+[0.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/package.bash'
+[0.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/yahboom_rosmaster_docking/package.zsh'
+[0.462s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_docking/share/colcon-core/packages/yahboom_rosmaster_docking)
+[0.463s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_drive_controller)
+[0.463s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller' for CMake module files
+[0.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/mecanum_drive_controller
+[0.464s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller' for CMake config files
+[0.464s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_drive_controller', 'cmake_prefix_path')
+[0.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.ps1'
+[0.465s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.dsv'
+[0.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.sh'
+[0.466s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller/lib'
+[0.466s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_drive_controller', 'ld_library_path_lib')
+[0.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.ps1'
+[0.467s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.dsv'
+[0.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.sh'
+[0.468s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller/bin'
+[0.468s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller/lib/pkgconfig/mecanum_drive_controller.pc'
+[0.468s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller/lib/python3.12/site-packages'
+[0.469s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller/bin'
+[0.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.ps1'
+[0.470s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv'
+[0.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.sh'
+[0.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.bash'
+[0.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.zsh'
+[0.471s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/mecanum_drive_controller/share/colcon-core/packages/mecanum_drive_controller)
+[0.471s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_drive_controller)
+[0.472s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller' for CMake module files
+[0.472s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller' for CMake config files
+[0.472s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_drive_controller', 'cmake_prefix_path')
+[0.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.ps1'
+[0.473s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.dsv'
+[0.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.sh'
+[0.473s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller/lib'
+[0.473s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_drive_controller', 'ld_library_path_lib')
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.ps1'
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.dsv'
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.sh'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller/bin'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller/lib/pkgconfig/mecanum_drive_controller.pc'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller/lib/python3.12/site-packages'
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/mecanum_drive_controller/bin'
+[0.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.ps1'
+[0.475s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv'
+[0.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.sh'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.bash'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.zsh'
+[0.476s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/mecanum_drive_controller/share/colcon-core/packages/mecanum_drive_controller)
+[0.573s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_msgs -- -j12 -l12
+[0.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_msgs
+[0.628s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_navigation -- -j12 -l12
+[0.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_navigation
+[0.636s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_msgs)
+[0.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_msgs
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs' for CMake module files
+[0.638s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs' for CMake config files
+[0.638s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_msgs', 'cmake_prefix_path')
+[0.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/cmake_prefix_path.ps1'
+[0.639s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/cmake_prefix_path.dsv'
+[0.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/cmake_prefix_path.sh'
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib'
+[0.640s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_msgs', 'ld_library_path_lib')
+[0.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/ld_library_path_lib.ps1'
+[0.640s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/ld_library_path_lib.dsv'
+[0.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/ld_library_path_lib.sh'
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/bin'
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib/pkgconfig/yahboom_rosmaster_msgs.pc'
+[0.641s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages'
+[0.641s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_msgs', 'pythonpath')
+[0.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/pythonpath.ps1'
+[0.641s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/pythonpath.dsv'
+[0.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/pythonpath.sh'
+[0.642s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/bin'
+[0.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/package.ps1'
+[0.642s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/package.dsv'
+[0.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/package.sh'
+[0.643s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/package.bash'
+[0.643s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/package.zsh'
+[0.643s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/colcon-core/packages/yahboom_rosmaster_msgs)
+[0.643s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_msgs)
+[0.643s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs' for CMake module files
+[0.644s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs' for CMake config files
+[0.644s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_msgs', 'cmake_prefix_path')
+[0.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/cmake_prefix_path.ps1'
+[0.644s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/cmake_prefix_path.dsv'
+[0.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/cmake_prefix_path.sh'
+[0.645s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib'
+[0.645s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_msgs', 'ld_library_path_lib')
+[0.646s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/ld_library_path_lib.ps1'
+[0.646s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/ld_library_path_lib.dsv'
+[0.646s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/ld_library_path_lib.sh'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/bin'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib/pkgconfig/yahboom_rosmaster_msgs.pc'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages'
+[0.646s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_msgs', 'pythonpath')
+[0.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/pythonpath.ps1'
+[0.647s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/pythonpath.dsv'
+[0.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/hook/pythonpath.sh'
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/bin'
+[0.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/package.ps1'
+[0.648s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/package.dsv'
+[0.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/package.sh'
+[0.649s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/package.bash'
+[0.649s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/yahboom_rosmaster_msgs/package.zsh'
+[0.649s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/share/colcon-core/packages/yahboom_rosmaster_msgs)
+[0.649s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_system_tests' with build type 'ament_cmake'
+[0.649s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_system_tests'
+[0.649s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.649s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_system_tests': AMENT_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_system_tests -- -j12 -l12
+[0.678s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_navigation)
+[0.679s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation' for CMake module files
+[0.679s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_navigation
+[0.679s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation' for CMake config files
+[0.680s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_navigation', 'cmake_prefix_path')
+[0.680s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/hook/cmake_prefix_path.ps1'
+[0.681s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/hook/cmake_prefix_path.dsv'
+[0.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/hook/cmake_prefix_path.sh'
+[0.681s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/lib'
+[0.681s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/bin'
+[0.681s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/lib/pkgconfig/yahboom_rosmaster_navigation.pc'
+[0.682s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages'
+[0.682s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_navigation', 'pythonpath')
+[0.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/hook/pythonpath.ps1'
+[0.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/hook/pythonpath.dsv'
+[0.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/hook/pythonpath.sh'
+[0.683s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/bin'
+[0.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/package.ps1'
+[0.683s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/package.dsv'
+[0.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/package.sh'
+[0.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/package.bash'
+[0.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/package.zsh'
+[0.684s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/colcon-core/packages/yahboom_rosmaster_navigation)
+[0.685s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_navigation)
+[0.685s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation' for CMake module files
+[0.685s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation' for CMake config files
+[0.686s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_navigation', 'cmake_prefix_path')
+[0.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/hook/cmake_prefix_path.ps1'
+[0.686s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/hook/cmake_prefix_path.dsv'
+[0.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/hook/cmake_prefix_path.sh'
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/lib'
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/bin'
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/lib/pkgconfig/yahboom_rosmaster_navigation.pc'
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages'
+[0.687s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_navigation', 'pythonpath')
+[0.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/hook/pythonpath.ps1'
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/hook/pythonpath.dsv'
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/hook/pythonpath.sh'
+[0.688s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/bin'
+[0.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/package.ps1'
+[0.689s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/package.dsv'
+[0.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/package.sh'
+[0.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/package.bash'
+[0.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/yahboom_rosmaster_navigation/package.zsh'
+[0.690s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/share/colcon-core/packages/yahboom_rosmaster_navigation)
+[0.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_system_tests' returned '0': AMENT_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster_system_tests -- -j12 -l12
+[0.730s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_system_tests': AMENT_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_system_tests
+[0.752s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_system_tests)
+[0.752s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests' for CMake module files
+[0.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_system_tests' returned '0': AMENT_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster_system_tests
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests' for CMake config files
+[0.753s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_system_tests', 'cmake_prefix_path')
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/hook/cmake_prefix_path.ps1'
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/hook/cmake_prefix_path.dsv'
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/hook/cmake_prefix_path.sh'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/lib'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/bin'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/lib/pkgconfig/yahboom_rosmaster_system_tests.pc'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/lib/python3.12/site-packages'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/bin'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/package.ps1'
+[0.756s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/package.dsv'
+[0.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/package.sh'
+[0.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/package.bash'
+[0.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/package.zsh'
+[0.757s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/colcon-core/packages/yahboom_rosmaster_system_tests)
+[0.757s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster_system_tests)
+[0.758s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests' for CMake module files
+[0.758s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests' for CMake config files
+[0.758s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster_system_tests', 'cmake_prefix_path')
+[0.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/hook/cmake_prefix_path.ps1'
+[0.758s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/hook/cmake_prefix_path.dsv'
+[0.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/hook/cmake_prefix_path.sh'
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/lib'
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/bin'
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/lib/pkgconfig/yahboom_rosmaster_system_tests.pc'
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/lib/python3.12/site-packages'
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/bin'
+[0.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/package.ps1'
+[0.760s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/package.dsv'
+[0.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/package.sh'
+[0.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/package.bash'
+[0.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/yahboom_rosmaster_system_tests/package.zsh'
+[0.761s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests/share/colcon-core/packages/yahboom_rosmaster_system_tests)
+[0.761s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster' with build type 'ament_cmake'
+[0.761s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster'
+[0.762s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.762s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster': AMENT_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests:/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation:/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:/home/kostas/ros2_ws/install/yahboom_rosmaster_localization:/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo:/home/kostas/ros2_ws/install/yahboom_rosmaster_docking:/home/kostas/ros2_ws/install/yahboom_rosmaster_description:/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests:/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation:/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:/home/kostas/ros2_ws/install/yahboom_rosmaster_localization:/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo:/home/kostas/ros2_ws/install/yahboom_rosmaster_docking:/home/kostas/ros2_ws/install/yahboom_rosmaster_description:/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages:/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster -- -j12 -l12
+[0.818s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster' returned '0': AMENT_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests:/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation:/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:/home/kostas/ros2_ws/install/yahboom_rosmaster_localization:/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo:/home/kostas/ros2_ws/install/yahboom_rosmaster_docking:/home/kostas/ros2_ws/install/yahboom_rosmaster_description:/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests:/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation:/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:/home/kostas/ros2_ws/install/yahboom_rosmaster_localization:/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo:/home/kostas/ros2_ws/install/yahboom_rosmaster_docking:/home/kostas/ros2_ws/install/yahboom_rosmaster_description:/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages:/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kostas/ros2_ws/build/yahboom_rosmaster -- -j12 -l12
+[0.819s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster': AMENT_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests:/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation:/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:/home/kostas/ros2_ws/install/yahboom_rosmaster_localization:/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo:/home/kostas/ros2_ws/install/yahboom_rosmaster_docking:/home/kostas/ros2_ws/install/yahboom_rosmaster_description:/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests:/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation:/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:/home/kostas/ros2_ws/install/yahboom_rosmaster_localization:/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo:/home/kostas/ros2_ws/install/yahboom_rosmaster_docking:/home/kostas/ros2_ws/install/yahboom_rosmaster_description:/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages:/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster
+[0.836s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster)
+[0.836s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster' for CMake module files
+[0.836s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kostas/ros2_ws/build/yahboom_rosmaster' returned '0': AMENT_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests:/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation:/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:/home/kostas/ros2_ws/install/yahboom_rosmaster_localization:/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo:/home/kostas/ros2_ws/install/yahboom_rosmaster_docking:/home/kostas/ros2_ws/install/yahboom_rosmaster_description:/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_system_tests:/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation:/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs:/home/kostas/ros2_ws/install/yahboom_rosmaster_localization:/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo:/home/kostas/ros2_ws/install/yahboom_rosmaster_docking:/home/kostas/ros2_ws/install/yahboom_rosmaster_description:/home/kostas/ros2_ws/install/yahboom_rosmaster_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation/lib/python3.12/site-packages:/home/kostas/ros2_ws/install/yahboom_rosmaster_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kostas/ros2_ws/build/yahboom_rosmaster
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster' for CMake config files
+[0.837s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster', 'cmake_prefix_path')
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/hook/cmake_prefix_path.ps1'
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/hook/cmake_prefix_path.dsv'
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/hook/cmake_prefix_path.sh'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster/bin'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster/lib/pkgconfig/yahboom_rosmaster.pc'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster/lib/python3.12/site-packages'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster/bin'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.ps1'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.dsv'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.sh'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.bash'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.zsh'
+[0.843s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster/share/colcon-core/packages/yahboom_rosmaster)
+[0.843s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yahboom_rosmaster)
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster' for CMake module files
+[0.844s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster' for CMake config files
+[0.844s] Level 1:colcon.colcon_core.shell:create_environment_hook('yahboom_rosmaster', 'cmake_prefix_path')
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/hook/cmake_prefix_path.ps1'
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/hook/cmake_prefix_path.dsv'
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/hook/cmake_prefix_path.sh'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster/bin'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster/lib/pkgconfig/yahboom_rosmaster.pc'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster/lib/python3.12/site-packages'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/kostas/ros2_ws/install/yahboom_rosmaster/bin'
+[0.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.ps1'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.dsv'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.sh'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.bash'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/kostas/ros2_ws/install/yahboom_rosmaster/share/yahboom_rosmaster/package.zsh'
+[0.848s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kostas/ros2_ws/install/yahboom_rosmaster/share/colcon-core/packages/yahboom_rosmaster)
+[0.848s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.849s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.849s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.849s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.853s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.853s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.853s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.867s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.867s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kostas/ros2_ws/install/local_setup.ps1'
+[0.868s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kostas/ros2_ws/install/_local_setup_util_ps1.py'
+[0.869s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kostas/ros2_ws/install/setup.ps1'
+[0.870s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kostas/ros2_ws/install/local_setup.sh'
+[0.870s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kostas/ros2_ws/install/_local_setup_util_sh.py'
+[0.870s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kostas/ros2_ws/install/setup.sh'
+[0.871s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kostas/ros2_ws/install/local_setup.bash'
+[0.871s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kostas/ros2_ws/install/setup.bash'
+[0.872s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kostas/ros2_ws/install/local_setup.zsh'
+[0.872s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kostas/ros2_ws/install/setup.zsh'

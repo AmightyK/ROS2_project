@@ -1,0 +1,31 @@
+[0.026s] Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_docking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_docking -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kostas/ros2_ws/install/yahboom_rosmaster_docking
+[0.051s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.302s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.312s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.344s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.353s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.363s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.377s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.415s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.457s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.458s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.519s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.577s] -- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.585s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.585s]   By not providing "Findapriltag_ros.cmake" in CMAKE_MODULE_PATH this project
+[0.585s]   has asked CMake to find a package configuration file provided by
+[0.585s]   "apriltag_ros", but CMake did not find one.
+[0.585s] 
+[0.585s]   Could not find a package configuration file provided by "apriltag_ros" with
+[0.585s]   any of the following names:
+[0.585s] 
+[0.585s]     apriltag_rosConfig.cmake
+[0.585s]     apriltag_ros-config.cmake
+[0.586s] 
+[0.586s]   Add the installation prefix of "apriltag_ros" to CMAKE_PREFIX_PATH or set
+[0.586s]   "apriltag_ros_DIR" to a directory containing one of the above files.  If
+[0.586s]   "apriltag_ros" provides a separate development package or SDK, be sure it
+[0.586s]   has been installed.
+[0.586s] 
+[0.586s] [0m
+[0.586s] -- Configuring incomplete, errors occurred!

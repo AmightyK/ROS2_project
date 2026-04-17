@@ -1,0 +1,10 @@
+/home/kostas/ros2_ws/build/yahboom_rosmaster_docking/CMakeFiles/uninstall.dir
+/home/kostas/ros2_ws/build/yahboom_rosmaster_docking/CMakeFiles/yahboom_rosmaster_docking_uninstall.dir
+/home/kostas/ros2_ws/build/yahboom_rosmaster_docking/CMakeFiles/detected_dock_pose_publisher.dir
+/home/kostas/ros2_ws/build/yahboom_rosmaster_docking/CMakeFiles/test.dir
+/home/kostas/ros2_ws/build/yahboom_rosmaster_docking/CMakeFiles/edit_cache.dir
+/home/kostas/ros2_ws/build/yahboom_rosmaster_docking/CMakeFiles/rebuild_cache.dir
+/home/kostas/ros2_ws/build/yahboom_rosmaster_docking/CMakeFiles/list_install_components.dir
+/home/kostas/ros2_ws/build/yahboom_rosmaster_docking/CMakeFiles/install.dir
+/home/kostas/ros2_ws/build/yahboom_rosmaster_docking/CMakeFiles/install/local.dir
+/home/kostas/ros2_ws/build/yahboom_rosmaster_docking/CMakeFiles/install/strip.dir

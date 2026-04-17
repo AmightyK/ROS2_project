@@ -1,0 +1,1 @@
+/home/kostas/ros2_ws/build/yahboom_rosmaster/ament_cmake_environment_hooks/local_setup.zsh

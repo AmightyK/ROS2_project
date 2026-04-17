@@ -1,0 +1,57 @@
+[0.028s] Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kostas/ros2_ws/install/yahboom_rosmaster_gazebo
+[0.055s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.331s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.340s] -- Found controller_manager: 4.42.2 (/opt/ros/jazzy/share/controller_manager/cmake)
+[0.381s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.394s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.410s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.429s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.524s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.525s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.603s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.941s] -- Found gz_ros2_control: 1.2.17 (/opt/ros/jazzy/share/gz_ros2_control/cmake)
+[0.947s] -- Found ros_gz: 1.0.18 (/opt/ros/jazzy/share/ros_gz/cmake)
+[0.947s] -- Found ros_gz_bridge: 1.0.18 (/opt/ros/jazzy/share/ros_gz_bridge/cmake)
+[0.977s] -- Looking for gz-msgs10 -- found version 10.3.2
+[0.983s] -- Searching for dependencies of gz-msgs10
+[0.999s] -- Looking for gz-utils2 -- found version 2.2.1
+[0.999s] -- Searching for dependencies of gz-utils2
+[1.000s] -- Looking for gz-math7 -- found version 7.5.2
+[1.000s] -- Searching for dependencies of gz-math7
+[1.001s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.007s] -- Checking for module 'tinyxml2'
+[1.022s] --   Found tinyxml2, version 10.0.0
+[1.056s] -- Looking for gz-transport13 -- found version 13.5.0
+[1.056s] -- Searching for dependencies of gz-transport13
+[1.084s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.088s] -- Checking for module 'libzmq >= 4'
+[1.101s] --   Found libzmq, version 4.3.5
+[1.146s] -- Checking for module 'uuid'
+[1.160s] --   Found uuid, version 2.39.3
+[1.193s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.193s] -- Searching for dependencies of gz-utils2
+[1.194s] -- Searching for <gz-utils2> component [cli]
+[1.194s] -- Looking for gz-utils2-cli -- found version 2.2.1
+[1.194s] -- Searching for dependencies of gz-utils2-cli
+[1.195s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.346s] -- Found ros_gz_image: 1.0.18 (/opt/ros/jazzy/share/ros_gz_image/cmake)
+[1.346s] -- Found ros_gz_sim: 1.0.18 (/opt/ros/jazzy/share/ros_gz_sim/cmake)
+[1.363s] -- Found ros2_control: 4.42.2 (/opt/ros/jazzy/share/ros2_control/cmake)
+[1.371s] -- Configuring incomplete, errors occurred!
+[1.371s] [31mCMake Error at CMakeLists.txt:18 (find_package):
+[1.371s]   By not providing "Findros2_controllers.cmake" in CMAKE_MODULE_PATH this
+[1.372s]   project has asked CMake to find a package configuration file provided by
+[1.372s]   "ros2_controllers", but CMake did not find one.
+[1.372s] 
+[1.372s]   Could not find a package configuration file provided by "ros2_controllers"
+[1.372s]   with any of the following names:
+[1.372s] 
+[1.372s]     ros2_controllersConfig.cmake
+[1.372s]     ros2_controllers-config.cmake
+[1.372s] 
+[1.372s]   Add the installation prefix of "ros2_controllers" to CMAKE_PREFIX_PATH or
+[1.372s]   set "ros2_controllers_DIR" to a directory containing one of the above
+[1.372s]   files.  If "ros2_controllers" provides a separate development package or
+[1.372s]   SDK, be sure it has been installed.
+[1.372s] 
+[1.372s] [0m

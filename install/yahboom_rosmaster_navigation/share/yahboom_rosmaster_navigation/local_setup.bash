@@ -1,0 +1,1 @@
+/home/kostas/ros2_ws/build/yahboom_rosmaster_navigation/ament_cmake_environment_hooks/local_setup.bash

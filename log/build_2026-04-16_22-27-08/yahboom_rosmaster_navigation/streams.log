@@ -1,0 +1,26 @@
+[0.031s] Invoking command in '/home/kostas/ros2_ws/build/yahboom_rosmaster_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kostas/ros2_ws/src/yahboom_rosmaster/yahboom_rosmaster_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kostas/ros2_ws/install/yahboom_rosmaster_navigation
+[0.061s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.326s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.335s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.372s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.385s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.401s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.421s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.497s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[0.497s]   By not providing "Findnavigation2.cmake" in CMAKE_MODULE_PATH this project
+[0.498s]   has asked CMake to find a package configuration file provided by
+[0.498s]   "navigation2", but CMake did not find one.
+[0.498s] 
+[0.498s]   Could not find a package configuration file provided by "navigation2" with
+[0.498s]   any of the following names:
+[0.498s] 
+[0.498s]     navigation2Config.cmake
+[0.498s]     navigation2-config.cmake
+[0.498s] 
+[0.498s]   Add the installation prefix of "navigation2" to CMAKE_PREFIX_PATH or set
+[0.498s]   "navigation2_DIR" to a directory containing one of the above files.  If
+[0.498s]   "navigation2" provides a separate development package or SDK, be sure it
+[0.498s]   has been installed.
+[0.498s] 
+[0.498s] [0m
+[0.499s] -- Configuring incomplete, errors occurred!
