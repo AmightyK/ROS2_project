@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ros2_gui_app"
+version = "0.1.0"
+description = "Giao diện điều khiển Robot sử dụng PyQt5"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PyQt5>=5.15.0",
+    "PyYAML>=6.0",
+    "numpy>=1.24.0",
+]
+
+[project.scripts]
+# Nếu bạn muốn tạo lệnh chạy nhanh, thay 'ten_file_cua_ban' bằng tên file .py
+# gui-app = "ten_file_cua_ban:main"

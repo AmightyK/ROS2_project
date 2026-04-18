@@ -1,0 +1,10 @@
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/deps/rosidl_runtime_rs-b80f63eb0f9cfa31.d: /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/lib.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/sequence.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/string.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/traits.rs
+
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/deps/librosidl_runtime_rs-b80f63eb0f9cfa31.rlib: /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/lib.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/sequence.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/string.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/traits.rs
+
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/deps/librosidl_runtime_rs-b80f63eb0f9cfa31.rmeta: /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/lib.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/sequence.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/string.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/traits.rs
+
+/home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/lib.rs:
+/home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/sequence.rs:
+/home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/string.rs:
+/home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rosidl_runtime_rs-0.4.2/src/traits.rs:

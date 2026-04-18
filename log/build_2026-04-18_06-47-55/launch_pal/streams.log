@@ -1,0 +1,20 @@
+[0.540s] Invoking command in '/home/amightyk05/ros2_sw/src/omni_based_robot/launch_pal': PYTHONPATH=/home/amightyk05/ros2_sw/build/launch_pal/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amightyk05/ros2_sw/install/launch_pal/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/launch_pal build --build-base /home/amightyk05/ros2_sw/build/launch_pal/build install --record /home/amightyk05/ros2_sw/build/launch_pal/install.log --single-version-externally-managed install_data
+[0.715s] running egg_info
+[0.727s] writing ../../../build/launch_pal/launch_pal.egg-info/PKG-INFO
+[0.727s] writing dependency_links to ../../../build/launch_pal/launch_pal.egg-info/dependency_links.txt
+[0.727s] writing requirements to ../../../build/launch_pal/launch_pal.egg-info/requires.txt
+[0.727s] writing top-level names to ../../../build/launch_pal/launch_pal.egg-info/top_level.txt
+[0.752s] reading manifest file '../../../build/launch_pal/launch_pal.egg-info/SOURCES.txt'
+[0.752s] adding license file 'LICENSE'
+[0.752s] writing manifest file '../../../build/launch_pal/launch_pal.egg-info/SOURCES.txt'
+[0.752s] running build
+[0.752s] running build_py
+[0.753s] running install
+[0.757s] running install_lib
+[0.770s] running install_data
+[0.770s] running install_egg_info
+[0.783s] removing '/home/amightyk05/ros2_sw/install/launch_pal/lib/python3.12/site-packages/launch_pal-0.1.15-py3.12.egg-info' (and everything under it)
+[0.783s] Copying ../../../build/launch_pal/launch_pal.egg-info to /home/amightyk05/ros2_sw/install/launch_pal/lib/python3.12/site-packages/launch_pal-0.1.15-py3.12.egg-info
+[0.783s] running install_scripts
+[0.865s] writing list of installed files to '/home/amightyk05/ros2_sw/build/launch_pal/install.log'
+[0.881s] Invoked command in '/home/amightyk05/ros2_sw/src/omni_based_robot/launch_pal' returned '0': PYTHONPATH=/home/amightyk05/ros2_sw/build/launch_pal/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amightyk05/ros2_sw/install/launch_pal/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/launch_pal build --build-base /home/amightyk05/ros2_sw/build/launch_pal/build install --record /home/amightyk05/ros2_sw/build/launch_pal/install.log --single-version-externally-managed install_data

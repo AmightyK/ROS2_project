@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: ros2_gui_app
+Version: 0.1.0
+Summary: Giao diện điều khiển Robot sử dụng PyQt5
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5>=5.15.0
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: numpy>=1.24.0

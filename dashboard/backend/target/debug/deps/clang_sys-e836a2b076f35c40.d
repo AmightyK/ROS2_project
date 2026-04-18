@@ -1,0 +1,14 @@
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/deps/clang_sys-e836a2b076f35c40.d: /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/support.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/link.rs /home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out/macros.rs /home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out/common.rs /home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out/dynamic.rs
+
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/deps/libclang_sys-e836a2b076f35c40.rlib: /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/support.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/link.rs /home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out/macros.rs /home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out/common.rs /home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out/dynamic.rs
+
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/deps/libclang_sys-e836a2b076f35c40.rmeta: /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/support.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/link.rs /home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out/macros.rs /home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out/common.rs /home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out/dynamic.rs
+
+/home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs:
+/home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/support.rs:
+/home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/link.rs:
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out/macros.rs:
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out/common.rs:
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out/dynamic.rs:
+
+# env-dep:OUT_DIR=/home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/clang-sys-f76c4658e92c7f58/out

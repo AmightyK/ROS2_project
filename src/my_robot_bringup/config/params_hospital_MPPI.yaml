@@ -1,0 +1,627 @@
+amcl:
+  ros__parameters:
+    use_sim_time: True
+    # Tọa độ TF chuẩn
+    base_frame_id: "base_link"
+    odom_frame_id: "odom"
+    global_frame_id: "map"
+    
+    # Dữ liệu đầu vào
+    scan_topic: "scan_front_raw"
+    map_topic: "map"
+    
+    # Cài đặt ban đầu (Bật True để map hiện ra ngay lập tức)
+    set_initial_pose: true
+    always_reset_initial_pose: false
+    first_map_only: false
+    initial_pose:
+      x: 0.1
+      y: 0.0
+      z: 0.0
+      yaw: 0.0
+      
+    # Mô hình chuyển động đa hướng cho xe Omni
+    robot_model_type: "nav2_amcl::OmniMotionModel"
+    
+    # Cấu hình đám mây hạt (Particle Cloud)
+    max_particles: 2000
+    min_particles: 500
+    pf_err: 0.05
+    pf_z: 0.99
+    update_min_a: 0.001
+    update_min_d: 0.001
+    resample_interval: 1
+    transform_tolerance: 0.2
+    
+    # Các hệ số nhiễu (Alpha)
+    alpha1: 0.05
+    alpha2: 0.05
+    alpha3: 0.05
+    alpha4: 0.05
+    alpha5: 0.05
+    
+    # Thông số Laser
+    laser_max_range: 100.0
+    laser_min_range: -1.0
+    laser_model_type: "likelihood_field"
+    max_beams: 60
+    z_hit: 0.5
+    z_max: 0.05
+    z_rand: 0.5
+    z_short: 0.05
+    sigma_hit: 0.2
+    lambda_short: 0.1
+    beam_skip_distance: 0.5
+    beam_skip_error_threshold: 0.9
+    beam_skip_threshold: 0.3
+    do_beamskip: false
+    tf_broadcast: true
+
+bt_navigator:
+  ros__parameters:
+    use_sim_time: True
+    global_frame: map
+    robot_base_frame: base_link
+    odom_topic: /odometry/filtered
+    bt_loop_duration: 10
+    default_server_timeout: 20
+    # default_nav_to_pose_bt_xml: "/home/hau/proj_ws/src/robot_omni/config/navigate_to_pose_w_replanning_and_recovery.xml"
+    # 'default_nav_through_poses_bt_xml' and 'default_nav_to_pose_bt_xml' are use defaults:
+    # nav2_bt_navigator/navigate_to_pose_w_replanning_and_recovery.xml
+    # nav2_bt_navigator/navigate_through_poses_w_replanning_and_recovery.xml
+    # They can be set here or via a RewrittenYaml remap from a parent launch file to Nav2.
+    
+
+bt_navigator_navigate_through_poses_rclcpp_node:
+  ros__parameters:
+    use_sim_time: True
+
+bt_navigator_navigate_to_pose_rclcpp_node:
+  ros__parameters:
+    use_sim_time: True
+
+map_server:
+  ros__parameters:
+    use_sim_time: True
+    # Overridden in launch by the "map" launch configuration or provided default value.
+    # To use in yaml, remove the default "map" value in the tb3_simulation_launch.py file & provide full path to map below.
+
+map_saver:
+  ros__parameters:
+    use_sim_time: True
+    save_map_timeout: 5.0
+    free_thresh_default: 0.25
+    occupied_thresh_default: 0.65
+    map_subscribe_transient_local: True
+
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      use_sim_time: true
+      global_frame: map
+      robot_base_frame: base_link
+      # transform_tolerance: 1.0      # 🔥 THÊM DÒNG NÀY VÀO ĐÂY
+      
+      # 🔥 THÊM DÒNG NÀY (Khai báo 4 góc xe, giả sử xe 50x50cm)
+      # footprint: "[ [0.32, 0.21], [0.32, -0.21], [-0.32, -0.21], [-0.32, 0.21] ]"
+      footprint: "[[0.3, 0.25], [0.3, -0.25], [-0.3, -0.25], [-0.3, 0.25]]"
+      
+      rolling_window: false
+      width: 25
+      height: 25
+      resolution: 0.05
+
+      plugins: ["static_layer", "voxel_layer", "inflation_layer"]
+
+      static_layer:
+        plugin: "nav2_costmap_2d::StaticLayer"
+        map_subscribe_transient_local: True
+
+      voxel_layer:
+        plugin: "nav2_costmap_2d::VoxelLayer"
+        enabled: True
+        footprint_clearing_enabled: true
+        max_obstacle_height: 2.0
+        publish_voxel_map: True
+        origin_z: 0.0
+        z_resolution: 0.1
+        z_voxels: 15
+        # unknown_threshold: 15
+        mark_threshold: 0
+        observation_sources: pointcloud scan scan1
+        combination_method: 1
+        scan:
+          topic: /scan_front_raw
+          max_obstacle_height: 2.0
+          min_obstacle_height: 0.5 
+          inf_is_valid: false
+          raytrace_max_range: 8.0     # Dùng tia laser để "quét sạch" bóng ma trong bán kính 5m
+          obstacle_max_range: 4.5     # Chỉ ghi nhận vật cản nếu nó cách xe dưới 4.5m
+          clearing: True
+          marking: True
+          data_type: "LaserScan"
+        scan1:
+          topic: /scan_rear_raw
+          max_obstacle_height: 2.0
+          min_obstacle_height: 0.5  
+          inf_is_valid: false
+          raytrace_max_range: 8.0     # Dùng tia laser để "quét sạch" bóng ma trong bán kính 5m
+          obstacle_max_range: 4.5     # Chỉ ghi nhận vật cản nếu nó cách xe dưới 4.5m
+          clearing: True
+          marking: True
+          data_type: "LaserScan"
+        pointcloud:  # no frame set, uses frame from message
+          topic: /camera/points
+          max_obstacle_height: 2.0
+          min_obstacle_height: 0.5
+          obstacle_max_range: 8.0
+          obstacle_min_range: 0.0
+          raytrace_max_range: 9.0
+          raytrace_min_range: 0.0
+          clearing: True
+          marking: True
+          data_type: "PointCloud2"
+          # transport_type: "raw"  # raw or/ with compression (zlib, draco, zstd)
+
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        inflation_radius: 1.2
+        cost_scaling_factor: 3.0
+
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      use_sim_time: true
+      global_frame: map
+      robot_base_frame: base_link
+      transform_tolerance: 0.2      # 🔥 THÊM DÒNG NÀY VÀO ĐÂY
+      
+      # 🔥 THÊM DÒNG NÀY NỮA
+      # footprint: "[ [0.32, 0.21], [0.32, -0.21], [-0.32, -0.21], [-0.32, 0.21] ]"
+      footprint: "[[0.3, 0.25], [0.3, -0.25], [-0.3, -0.25], [-0.3, 0.25]]"
+      
+      resolution: 0.05
+
+      # IMPORTANT for local behavior
+      rolling_window: true
+      width: 25
+      height: 25
+
+      plugins: ["voxel_layer", "inflation_layer"] # Thêm obstacle_layer
+
+      voxel_layer:
+        plugin: "nav2_costmap_2d::VoxelLayer"
+        enabled: True
+        footprint_clearing_enabled: true
+        max_obstacle_height: 2.0
+        publish_voxel_map: True
+        origin_z: 0.0
+        z_resolution: 0.1
+        z_voxels: 15
+        # unknown_threshold: 15
+        mark_threshold: 0
+        observation_sources: pointcloud scan scan1
+        combination_method: 1
+        scan:
+          topic: /scan_front_raw
+          max_obstacle_height: 2.0
+          min_obstacle_height: 0.5 
+          inf_is_valid: false
+          raytrace_max_range: 25.0     # Dùng tia laser để "quét sạch" bóng ma trong bán kính 5m
+          obstacle_max_range: 4.5     # Chỉ ghi nhận vật cản nếu nó cách xe dưới 4.5m
+          clearing: True
+          marking: True
+          data_type: "LaserScan"
+        scan1:
+          topic: /scan_rear_raw
+          max_obstacle_height: 2.0
+          min_obstacle_height: 0.5
+          inf_is_valid: false
+          raytrace_max_range: 8.0
+          obstacle_max_range: 4.5
+          clearing: True
+          marking: True
+          data_type: "LaserScan"
+        pointcloud:  # no frame set, uses frame from message
+          topic: /camera/points
+          max_obstacle_height: 2.0
+          min_obstacle_height: 0.5
+          obstacle_max_range: 8.0
+          obstacle_min_range: 0.0
+          raytrace_max_range: 9.0
+          raytrace_min_range: 0.0
+          clearing: True
+          marking: True
+          data_type: "PointCloud2"
+          # transport_type: "raw"  # raw or/ with compression (zlib, draco, zstd)
+
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        # 🔥 Giữ nguyên để xe tự tin chui qua khe hẹp
+        inflation_radius: 1.2
+        cost_scaling_factor: 2.0
+        
+
+planner_server:
+  ros__parameters:
+    use_sim_time: true
+    expected_planner_frequency: 10.0
+    # footprint: "[ [0.32, 0.21], [0.32, -0.21], [-0.32, -0.21], [-0.32, 0.21] ]"
+    footprint: "[[0.3, 0.25], [0.3, -0.25], [-0.3, -0.25], [-0.3, 0.25]]"
+    # robot_radius: 0.36
+    planner_plugins: ["GridBased"]
+
+    GridBased:
+      # 🔥 1. ĐỔI THUẬT TOÁN SANG SMAC 2D
+      plugin: "nav2_smac_planner::SmacPlanner2D"
+      tolerance: 0.5
+      allow_unknown: false
+      
+      # 🔥 2. VŨ KHÍ ÉP ĐI ĐƯỜNG THẲNG
+      # Mặc định là 2.0. Tăng lên 5.0 để bộ não hiểu rằng: 
+      # "Thà đi thẳng xa hơn một chút, còn hơn là đi chéo vào vùng sương mù gần tường!"
+      cost_travel_multiplier: 10.0  
+      
+      # 🔥 3. CHUẨN BỊ TƯ THẾ
+      # Ép xe tính toán góc thẳng đứng khi chuẩn bị vào cửa
+      use_final_approach_orientation: true
+
+controller_server:
+  ros__parameters:
+    use_sim_time: true
+    controller_frequency: 10.0
+    transform_tolerance: 0.2       # 🔥 THÊM DÒNG NÀY: Cho phép sai số thời gian TF trễ 1.0 giây
+    costmap_update_timeout: 0.3
+    min_x_velocity_threshold: 0.001
+    min_y_velocity_threshold: 0.001
+    min_theta_velocity_threshold: 0.001
+    failure_tolerance: 0.3
+    odom_topic: "/odometry/filtered"
+    odom_duration: 0.3
+    enable_stamped_cmd_vel: True
+    progress_checker_plugins: ["progress_checker"] 
+    goal_checker_plugins: ["goal_checker"] 
+    path_handler_plugins: ["PathHandler"] # Đã sửa lỗi chính tả plguins -> plugins
+    controller_plugins: ["FollowPath"]
+    
+    progress_checker:
+      plugin: "nav2_controller::SimpleProgressChecker"
+      required_movement_radius: 0.1
+      movement_time_allowance: 5.0
+      
+    goal_checker:
+      plugin: "nav2_controller::SimpleGoalChecker"
+      xy_goal_tolerance: 0.3
+      yaw_goal_tolerance: 0.5
+      path_length_tolerance: 1.0
+      stateful: True
+      
+    PathHandler:
+      plugin: "nav2_controller::FeasiblePathHandler"
+      prune_distance: 2.0
+      enforce_path_inversion: True
+      enforce_path_rotation: False
+      inversion_xy_tolerance: 0.2
+      inversion_yaw_tolerance: 0.4
+      minimum_rotation_angle: 0.785
+      reject_unit_path: False  
+
+    FollowPath: 
+      plugin: "nav2_rotation_shim_controller::RotationShimController"
+
+      # ===== Rotation Shim =====
+      angular_dist_threshold: 0.349        # ~45 deg
+      angular_disengage_threshold: 0.0873  # ~22 deg
+      forward_sampling_distance: 0.5
+
+      rotate_to_heading_angular_vel: 1.5
+      max_angular_accel: 1.4
+      simulate_ahead_time: 1.0
+      rotate_to_goal_heading: false
+
+      # ===== MPPI (GIỮ NGUYÊN 100%) =====
+      primary_controller: "nav2_mppi_controller::MPPIController"
+
+      time_steps: 11
+      model_dt: 0.1
+      batch_size: 2000
+      
+      vx_std: 2.5
+      vy_std: 0.0 
+      wz_std: 0.5
+      
+      vx_max: 12.0
+      vx_min: -1.0
+      vy_max: 0.0
+      wz_max: 2.0
+      
+      ax_max: 4.0
+      ax_min: -2.5
+      ay_max: 0.0
+      ay_min: 0.0
+      az_max: 1.5
+      az_min: -1.5
+      
+      iteration_count: 1
+      temperature: 0.5
+      gamma: 0.015
+      motion_model: "DiffDrive"
+      visualize: false
+      critic_index_to_visualize: 0
+      regenerate_noises: false
+      
+      TrajectoryVisualizer:
+        trajectory_step: 5
+        time_step: 3
+        
+      TrajectoryValidator:
+        plugin: "mppi::DefaultOptimalTrajectoryValidator"
+        collision_lookahead_time: 1.5
+        consider_footprint: true
+          
+      AckermannConstraints:
+        min_turning_r: 0.0
+        
+      critics: ["ConstraintCritic", "CostCritic", "GoalCritic", "GoalAngleCritic", "PathAlignCritic", "PathFollowCritic", "PathAngleCritic", "PreferForwardCritic"]
+      
+      ConstraintCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 4.0
+        
+      CostCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 3.5
+        critical_cost: 300.0
+        consider_footprint: true
+        collision_cost: 1000000.0
+        near_goal_distance: 1.0
+        trajectory_point_step: 2
+        
+      GoalCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 7.0
+        threshold_to_consider: 1.4
+        
+      GoalAngleCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 3.0
+        threshold_to_consider: 0.5
+        
+      PreferForwardCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 5.0
+        threshold_to_consider: 0.5
+        
+      PathAlignCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 4.0
+        max_path_occupancy_ratio: 0.05
+        trajectory_point_step: 4
+        threshold_to_consider: 0.5
+        offset_from_furthest: 20
+        use_path_orientations: false
+        
+      PathFollowCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 4.0
+        offset_from_furthest: 5
+        threshold_to_consider: 1.4
+        
+      PathAngleCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 8.0
+        offset_from_furthest: 4
+        threshold_to_consider: 0.5
+        max_angle_to_furthest: 1.0
+        mode: 0
+
+
+smoother_server:
+  ros__parameters:
+    costmap_topic: global_costmap/costmap_raw
+    footprint_topic: global_costmap/published_footprint
+    robot_base_frame: base_link
+    transform_tolerance: 0.1
+    smoother_plugins: ["simple_smoother"]
+    simple_smoother:
+      plugin: "nav2_smoother::SimpleSmoother"
+      tolerance: 1.0e-10
+      do_refinement: True
+      refinement_num: 4
+      max_its: 1000
+      w_data: 0.2
+      w_smooth: 0.3
+      enforce_path_inversion: True
+
+velocity_smoother:
+  ros__parameters:
+    use_sim_time: true
+    smoothing_frequency: 20.0
+    scale_velocities: false
+    feedback: "OPEN_LOOP"
+    # MẢNG LÀ [X, Y, THETA]. ĐÃ MỞ KHÓA Y:
+    max_velocity: [12.0, 0.0, 2.0]     
+    min_velocity: [-1.0, 0.0, -2.0]
+    deadband_velocity: [0.0, 0.0, 0.0]
+    velocity_timeout: 1.0
+    max_accel: [4.0, 0.0, 1.5]        
+    max_decel: [-2.5, 0.0, -1.5]
+    odom_topic: "/odometry/filtered"
+    cmd_vel_topic: "cmd_vel_smoothed"
+    odom_duration: 0.1
+    use_realtime_priority: false
+    enable_stamped_cmd_vel: true
+    stamp_smoothed_velocity_with_smoothing_time: false  # ONLY IN JAZZY
+
+collision_monitor:
+  ros__parameters:
+    enabled: true
+    use_sim_time: true
+    base_frame_id: "base_link"
+    odom_frame_id: "odom"
+    cmd_vel_in_topic: "cmd_vel_smoothed"
+    cmd_vel_out_topic: "/mobile_base_controller/reference"
+    state_topic: "collision_monitor_state"
+    transform_tolerance: 0.5
+    source_timeout: 5.0
+    base_shift_correction: True
+    stop_pub_timeout: 2.0
+    enable_stamped_cmd_vel: True  # False for Jazzy or older
+    use_realtime_priority: false
+    polygons: ["PolygonStop", "PolygonSlow", "FootprintApproach"]
+    PolygonStop:
+      type: "polygon"
+      points: "[[1.5, 0.40], [1.5, -0.40], [-0.5, -0.40], [-0.5, 0.40]]"
+      action_type: "stop"
+      min_points: 4  # max_points: 3 for Humble
+      visualize: True
+      polygon_pub_topic: "polygon_stop"
+      enabled: false
+    PolygonSlow:
+      type: "polygon"
+      # 🔥 BÓP CHIỀU RỘNG TỪ 1.0 XUỐNG 0.35 (Tổng rộng 70cm, vừa đủ bao bọc nhẹ ngoài thân xe)
+      points: "[[2.25, 1.1], [2.25, -1.1], [-2.25, -1.1], [-2.25, 1.1]]"
+      action_type: "slowdown"
+      min_points: 4  
+      slowdown_ratio: 0.8
+      visualize: True
+      polygon_pub_topic: "polygon_slowdown"
+      enabled:  True
+    PolygonLimit:
+      type: "polygon"
+      points: "[[0.5, 0.25], [0.5, -0.25], [-0.5, -0.25], [-0.5, 0.25]]"
+      action_type: "limit"
+      min_points: 4 
+      linear_limit: 6.0
+      angular_limit: 1.5
+      visualize: True
+      polygon_pub_topic: "polygon_limit"
+      enabled: True
+    FootprintApproach:
+      type: "polygon"
+      action_type: "approach"
+      footprint_topic: "/local_costmap/published_footprint"
+      time_before_collision: 2.0
+      simulation_time_step: 0.02
+      min_points: 6  # max_points: 5 for Humble
+      visualize: False
+      enabled: True
+    VelocityPolygonStop:
+      type: "velocity_polygon"
+      action_type: "stop"
+      min_points: 6
+      visualize: True
+      enabled: True
+      polygon_pub_topic: "velocity_polygon_stop"
+      velocity_polygons: ["rotation", "translation_forward", "translation_backward", "stopped"]
+      holonomic: false
+      rotation:
+        points: "[[0.3, 0.3], [0.3, -0.3], [-0.3, -0.3], [-0.3, 0.3]]"
+        linear_min: 0.0
+        linear_max: 0.05
+        theta_min: -1.0
+        theta_max: 1.0
+      translation_forward:
+        points: "[[0.50, 0.30], [0.50, -0.30], [-0.36, -0.30], [-0.36, 0.30]]"
+        linear_min: 0.0
+        linear_max: 5.0
+        theta_min: -1.0
+        theta_max: 1.0
+      translation_backward:
+        points: "[[0.36, 0.30], [0.36, -0.30], [-0.50, -0.30], [-0.50, 0.30]]"
+        linear_min: -1.0
+        linear_max: 0.0
+        theta_min: -1.0
+        theta_max: 1.0
+      # This is the last polygon to be checked, it should cover the entire range of robot's velocities
+      # It is used as the stopped polygon when the robot is not moving and as a fallback if the velocity
+      # is not covered by any of the other sub-polygons
+      stopped:
+        points: "[[0.41, 0.30], [0.41, -0.30], [-0.41, -0.30], [-0.41, 0.30]]"
+        linear_min: -1.0
+        linear_max: 1.0
+        theta_min: -1.0
+        theta_max: 1.0
+    observation_sources: ["scan", "pointcloud"]
+    scan:
+      source_timeout: 0.5
+      type: "scan"
+      topic: "/scan_front_raw"
+      enabled: True
+    pointcloud:
+      type: "pointcloud"
+      topic: "/intel_realsense_r200_depth/points"
+      transport_type: "raw"  # raw or/ with compression (zlib, draco, zstd)
+      min_height: 0.1
+      max_height: 0.5
+      min_range: 0.2
+      enabled: False
+    # costmap:
+    #   type: "costmap"   # relative, respects namespaces
+    #   topic: "local_costmap/costmap"
+    #   cost_threshold: 254
+    #   enabled: True
+    #   treat_unknown_as_obstacle: True
+
+docking_server:
+  ros__parameters:
+    use_sim_time: true
+    base_frame: "base_link"
+    odom_frame: "odom"
+    dock_plugins: ["simple_dock"]
+    simple_dock:
+      plugin: "opennav_docking::SimpleChargingDock"
+      docking_threshold: 0.05
+      staging_x_offset: -0.5
+      use_battery_status: false
+
+behavior_server:
+  ros__parameters:
+    local_costmap_topic: local_costmap/costmap_raw
+    local_footprint_topic: local_costmap/published_footprint
+    global_costmap_topic: global_costmap/costmap_raw
+    global_footprint_topic: global_costmap/published_footprint
+    cycle_frequency: 10.0
+    behavior_plugins: ["spin", "backup", "drive_on_heading", "wait", "assisted_teleop"]
+    spin:
+      plugin: "nav2_behaviors::Spin" # In Iron and older versions, "/" was used instead of "::"
+    backup:
+      plugin: "nav2_behaviors::BackUp" # In Iron and older versions, "/" was used instead of "::"
+    drive_on_heading:
+      plugin: "nav2_behaviors::DriveOnHeading" # In Iron and older versions, "/" was used instead of "::"
+    wait:
+      plugin: "nav2_behaviors::Wait" # In Iron and older versions, "/" was used instead of "::"
+    assisted_teleop:
+      plugin: "nav2_behaviors::AssistedTeleop" # In Iron and older versions, "/" was used instead of "::"
+    local_frame: odom
+    global_frame: map
+    robot_base_frame: base_link
+    transform_tolerance: 0.1
+    simulate_ahead_time: 0.5
+    
+    # 🔥 TĂNG ĐỒNG BỘ VỚI DWB VÀ SMOOTHER HÔM TRƯỚC
+    max_rotational_vel: 2.0     # Tăng từ 1.0 lên 2.0
+    min_rotational_vel: 0.4
+    rotational_acc_lim: 1.5     # Tăng từ 3.2 lên 5.0 để xe xoay đầu chớp nhoáng
+    
+    enable_stamped_cmd_vel: true
+
+lifecycle_manager_localization:
+  ros__parameters:
+    use_sim_time: true
+    autostart: true
+    node_names: ['map_server', 'amcl']
+
+lifecycle_manager_navigation:
+  ros__parameters:
+    use_sim_time: true
+    autostart: true
+    node_names: ['planner_server', 'controller_server', 'smoother_server', 'behavior_server', 'bt_navigator', 'collision_monitor']

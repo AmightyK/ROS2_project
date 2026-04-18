@@ -1,0 +1,1 @@
+/home/amightyk05/ros2_sw/build/omni_base_bringup/ament_cmake_core/omni_base_bringupConfig-version.cmake

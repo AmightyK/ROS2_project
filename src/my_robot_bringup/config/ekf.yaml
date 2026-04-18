@@ -1,0 +1,29 @@
+  ekf_filter_node:
+    ros__parameters:
+      use_sim_time: true
+      frequency: 100.0
+      two_d_mode: true
+      publish_tf: true
+
+      map_frame: map
+      odom_frame: odom
+      base_link_frame: base_link
+      world_frame: odom
+
+      # CẤU HÌNH BÁNH XE (Chỉ lấy Vận tốc)
+      odom0: /mobile_base_controller/odometry
+      odom0_config: [false, false, false, # KHÔNG lấy X, Y, Z tuyệt đối
+                    false, false, false, # KHÔNG lấy Roll, Pitch, Yaw tuyệt đối
+                    true,  true,  false, # CHỈ lấy V_x, V_y (Dành cho Omni)
+                    false, false, true,  # Lấy V_yaw (Tốc độ xoay)
+                    false, false, false]
+
+      # CẤU HÌNH IMU (Ông chủ của góc xoay)
+      imu0: /base_imu
+      imu0_config: [false, false, false,
+                    false, false, true,   # LẤY Yaw tuyệt đối (IMU rất chuẩn cái này)
+                    false, false, false,
+                    false, false, true,   # Lấy vận tốc góc (Angular velocity)
+                    true,  true,  false]  # Lấy gia tốc (Linear acceleration)
+      
+      imu0_remove_gravitational_acceleration: true

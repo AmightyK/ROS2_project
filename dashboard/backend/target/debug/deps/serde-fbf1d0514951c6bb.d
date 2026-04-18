@@ -1,0 +1,14 @@
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/deps/serde-fbf1d0514951c6bb.d: /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/serde-6aeb262f7e7c722f/out/private.rs
+
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/deps/libserde-fbf1d0514951c6bb.rlib: /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/serde-6aeb262f7e7c722f/out/private.rs
+
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/deps/libserde-fbf1d0514951c6bb.rmeta: /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/serde-6aeb262f7e7c722f/out/private.rs
+
+/home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/home/amightyk05/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/serde-6aeb262f7e7c722f/out/private.rs:
+
+# env-dep:OUT_DIR=/home/amightyk05/ros2_sw/dashboard/backend/target/debug/build/serde-6aeb262f7e7c722f/out
