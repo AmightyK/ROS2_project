@@ -45,3 +45,9 @@ The system consists of the following core components:
 ------------------------------------------------------------------------
 ## Dashboard
 ![Dashboard UI](Screenshot%20from%202026-04-18%2007-08-54.png)
+
+## Contributer
+- **Lê Lữ Anh Khôi**
+- **Đoàn Nguyễn Anh Khoa**
+- **Nguyễn Thị Ánh Ngọc**
+- **Phan Văn Khải**
